@@ -7,8 +7,9 @@ html, body {
     height: 100%;
 }
 h1 {
-	font-size: 140px;
+	font-size: 170px;
 }
+.top-buffer { margin-top:4.29%;}/*%73px; }*/
 // Mixin
 .centered {
   float:none;
@@ -28,7 +29,7 @@ h1 {
 }
 .container h2 {
 	padding-bottom: 10%!important;
-	font-size: 4em;
+	font-size: 4.4em;
 	font-weight: 100;
 }
 .container p {
@@ -53,13 +54,16 @@ h1 {
 	padding-right:0px;
 	margin-left: 15px;
 	margin-right: 15px;
-	margin-top: 4px;
 	border-top: 4px #29cde6 solid;
 }
-.navbar .nav>li>a:hover, .navbar .nav>li>a:focus, .navbar .nav>li.active {
+.navbar .nav>li>a:hover, .navbar .nav>li>a:focus, .navbar .nav>li.active>a {
 	color:#278d9e;
 	background-color: transparent;
 	border-top: 4px #278d9e solid;
+	padding-left: 0px;
+	padding-right:0px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 
@@ -81,6 +85,10 @@ h1 {
 	background-color: white;
 	color: #b8bdbd;
 }
+.projects .pitchitshipit {
+	font-family: 'Droid Sans' serif;
+}
+
 
 .team {
 	background-color: #eff5f5;
@@ -92,7 +100,29 @@ h1 {
 .team p {
 	color: #d5dcdd;
 }
-
+.team .staff-pic a {
+	color: #afb7b8;
+}
+.team .overlay {
+	padding-right: 5px;
+	width: 151px;
+	z-index: 100;
+	height: 40px;
+	font-weight: 500;
+	position: absolute;
+	background-color: #29cde6;
+	opacity: 0.9;
+	top: 100px;
+	right: 24px;
+	text-align: right;
+	display: none;
+	line-height: 1.2em;
+	color: white;
+}
+.team .staff-pic img {
+	max-width: 150px;
+	position: static;
+}
 .contact {
 	background-color: #2acee7;
 /*	background-image: url("../img/large_icon_logo.png");
@@ -100,7 +130,12 @@ h1 {
 	background-position: center top;*/
 	color: white;
 }
-
+.contact h2 {
+	padding-bottom: 25px!important;
+}
+.contact p {
+	font-size: 1.5em;
+}
 
 
 
