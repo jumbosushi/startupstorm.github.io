@@ -1,0 +1,386 @@
+// MAIN STYLESHEET -- style.scssgu
+
+// Imports ***********************
+@import 'reset';
+@import 'colors';
+@import 'unsemantic/unsemantic-grid-responsive-tablet-no-ie7';
+* {
+	box-sizing: border-box;
+	font-family: lato, sans-serif;}
+
+// MISC Mixins & Classes ********
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.active {display: block !important;}
+.hidden {display: none !important;}
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	padding-top: 60px; //to account for navigation fixed
+	background-color: $blue;
+}
+
+//////////////////////////////////
+// ********** HEADER ********** //
+//////////////////////////////////
+
+header {
+	padding: 10px;
+	background-color: $blue;
+	overflow: auto;
+	position: fixed; top: 0; left: 0; right: 0;
+	z-index: 9999;
+	#logo {
+		float: left;
+		position: relative;
+		@media (max-width: 767px) {text-align: center; width: 100%;}
+		img {
+			max-width: 302px;
+		}
+	}
+	nav {
+		float: right;
+		font-family: 'raleway', sans-serif;
+		@media (max-width: 767px) {text-align: center; width: 100%; float: none;}
+		a {
+			display: inline-block;
+			margin-left: 1em;
+			color: white;
+			line-height: 40px;
+			text-decoration: none;}
+	}
+
+}
+
+#intro {
+	background-color: $blue;
+	color: white;
+	font-family: 'raleway', sans-serif;
+	padding: 6em 0;
+	overflow: hidden;
+	h1 {
+		font-size: 10em;
+		@media (max-width: 767px) {
+			font-size: 5em;
+		}
+		font-weight: 700;}
+	
+	.event {
+	display: block;
+	margin-top: 1em;
+	text-align: left;
+		h3 {
+			color: $darkblue;
+			font-size: 2em;
+			display: inline-block;
+			margin-bottom: .35em;}
+		span {
+			display: inline;
+			font-size: 1.4em;
+			&:after {
+				content: '/';
+				margin: 0 .6em;
+				font-size: 1.5em;
+				line-height: .5em;
+				position: relative;
+				font-weight: 300;
+				top: .15em;
+				color: $darkblue;
+			}
+			&:last-of-type {
+				&:after {content: '';}
+			}
+		}
+		.button {text-align: center;}
+		a {
+			display: inline-block;
+			background-color: $darkblue;
+			color: white;
+			font-size: 1.1em;
+			margin: 0 auto;
+			margin-top: 3em;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: .8em .9em;
+			border-bottom: 4px solid darken($darkblue,5%);
+			border-radius: 5px;
+			&:active {
+				position: relative;
+				border: 0;
+				top: 4px;
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+}
+
+#about {
+	background-color: $darkblue;
+	color: white;
+	padding: 7em 0;
+	font-family: 'raleway', sans-serif;
+	h2 {
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	p {
+		font-size: 1.3em;
+		line-height: 1.4em;
+
+	}
+}
+
+#ventures {
+	background-color: white;
+	padding: 7em 0;
+	font-family: 'raleway', sans-serif;
+	h2 {
+		color: $darkgrey;
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	p {
+		color: $grey;
+		font-size: 1.3em;
+		line-height: 1.4em;
+		margin-bottom: 4em;
+	}
+
+	.venture-list {
+		li {
+			position: relative;
+			border: 2px solid white;
+			overflow: hidden;
+		
+		.static {
+			display: block;
+			background-color: $lightgrey;
+			border-style: outset;
+			width: 100%;
+			height: 0;
+			padding-bottom: 100%;
+			position: relative;
+
+			background-size: cover;
+			background-color: none;
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0; bottom: 0; left: 0; right: 0;
+				opacity: .8;
+			}
+			&:after {
+				position: absolute;
+				content: '';
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+		.hover {
+			top: -100%; left: 0; bottom: 0; right: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			background-color: rgba($blue,.75);
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			padding-top: 38%;
+			h4 {
+				font-size: 2.5em;
+				margin-bottom: .6em;
+			}
+			
+			.button {
+				display: inline-block;
+				background-color: white;
+				color: $blue;
+				width: auto;
+				font-size: 1em;
+				line-height: 1.2em;
+				padding: .4em;
+				text-transform: uppercase;
+				text-decoration: none;
+				&:hover {background-color: $darkblue; color: white;}
+				}
+		}
+		
+		#nwhacks {
+			background-image: url('../img/ventures/nwhacks-bg.jpg');
+			&:before {
+				background-color: #4bbb87;
+			}
+			&:after {
+				background-image: url('../img/ventures/nwhacks-logo.png');
+			}
+		}
+	}
+}
+
+#team {
+	background-color: $lightgrey;
+	padding: 7em 0;
+	font-family: 'raleway', sans-serif;
+	h2 {
+		color: $darkgrey;
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	p {
+		color: $grey;
+		font-size: 1.3em;
+		line-height: 1.4em;
+		margin-bottom: 4em;
+	}
+
+	.team-list {
+	li {
+		position: relative;
+		border: 2px solid $lightgrey;
+		overflow: hidden;
+		margin-bottom: 2em;
+		@media  (max-width: 768px) { max-width: 500px; margin: 0 auto;}
+
+		h3 {
+		color: $darkgrey;
+		font-size: 1.4em;
+		text-align: left;
+		margin: .3em 0;
+		}	
+
+		h4 {
+		color: $blue;
+		font-size: 1.1em;
+		margin: .5em 0;
+		}
+	
+		p {
+		color: $grey;
+		font-size: 1em;
+		line-height: 1.2em;
+		}
+		
+		.static {
+			display: block;
+			background-color: $lightgrey;
+			border-style: outset;
+			width: 100%;
+			height: 0;
+			padding-bottom: 100%;
+			position: relative;
+
+			background-size: cover;
+			background-color: none;
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0; bottom: 0; left: 0; right: 0;
+				opacity: .8;
+			}
+			&:after {
+				position: absolute;
+				content: '';
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+		.hover {
+			top: -100%; left: 0; bottom: 0; right: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			background-color: rgba($blue,.75);
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			padding-top: 70%;
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 2em;
+				margin: 0 .5em;
+				position: relative;
+				z-index: 999;
+			}
+			h4 {
+				font-size: 2.5em;
+				margin-bottom: .6em;
+			}
+			
+			.button {
+				display: inline-block;
+				background-color: white;
+				color: $blue;
+				width: auto;
+				font-size: 1em;
+				line-height: 1.2em;
+				padding: .4em;
+				text-transform: uppercase;
+				text-decoration: none;
+				&:hover {background-color: $darkblue; color: white;}
+				}
+		}
+		
+		//list of team members:
+		$team: (david, rob, peter, tasha, jamie, jun);
+
+		// generate background images for each member of team. each image should be named the first name and in .jpg format.
+		@each $member in $team {
+			##{$member} .static {
+				background-image: url('../img/team/' #{$member} '.jpg')
+			}
+		}
+	}
+}
+
+#contact {
+	background-color: $blue;
+	padding: 7em 0;
+	font-family: 'raleway', sans-serif;
+	h2 {
+		color: white;
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	p {
+		color: white;
+		font-size: 1.3em;
+		line-height: 1.4em;
+		margin-bottom: 4em;
+	}
+
+	.icons {
+		text-align: center;
+		a {
+			color: $blue;
+			text-decoration: none;
+			font-size: 1.5em;
+			margin: 0 .4em;
+			padding: 10px;
+			background-color: white;
+		}
+	}
+
+}
