@@ -272,9 +272,13 @@ header {
 		}
 	
 		p {
-		color: $grey;
+		color: darken($grey, 15%);
 		font-size: 1em;
-		line-height: 1.2em;
+		line-height: 1.6em;
+			a {
+				color: $blue;
+				text-decoration: none;
+			}
 		}
 		
 		.static {
@@ -288,20 +292,6 @@ header {
 
 			background-size: cover;
 			background-color: none;
-			&:before {
-				position: absolute;
-				content: '';
-				top: 0; bottom: 0; left: 0; right: 0;
-				opacity: .8;
-			}
-			&:after {
-				position: absolute;
-				content: '';
-				background-repeat: no-repeat;
-				background-position: 50% 50%;
-				height: 100%;
-				width: 100%;
-			}
 		}
 	}
 		.hover {
@@ -322,6 +312,7 @@ header {
 				position: relative;
 				z-index: 999;
 			}
+			.hidden {display: none;}
 			h4 {
 				font-size: 2.5em;
 				margin-bottom: .6em;
@@ -348,6 +339,37 @@ header {
 		@each $member in $team {
 			##{$member} .static {
 				background-image: url('../img/team/' #{$member} '.jpg')
+			}
+		}
+
+		#hiring div {
+			.hiringbutton {
+			a {
+			display: inline-block;
+			background-color: $darkblue;
+			color: white;
+			font-size: 1.1em;
+			margin: 0 auto;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: .8em .9em;
+			border-bottom: 4px solid darken($darkblue,5%);
+			border-radius: 5px;
+			&:active {
+				position: relative;
+				border: 0;
+				top: 4px;
+				margin-bottom: 4px;
+			}
+		}
+			}
+			span {
+				display: block;
+				font-size: 10em;
+				@include vertical-align;
+				text-align: center;
+				width: 100%;
+				color: $grey;
 			}
 		}
 	}

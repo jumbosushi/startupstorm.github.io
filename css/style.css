@@ -1416,9 +1416,12 @@ header {
       font-size: 1.1em;
       margin: .5em 0; }
     #team .team-list li p {
-      color: #98a4a8;
+      color: #6f7f84;
       font-size: 1em;
-      line-height: 1.2em; }
+      line-height: 1.6em; }
+      #team .team-list li p a {
+        color: #3fccea;
+        text-decoration: none; }
     #team .team-list li .static {
       display: block;
       background-color: #ebedee;
@@ -1429,21 +1432,6 @@ header {
       position: relative;
       background-size: cover;
       background-color: none; }
-      #team .team-list li .static:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: .8; }
-      #team .team-list li .static:after {
-        position: absolute;
-        content: '';
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        height: 100%;
-        width: 100%; }
   #team .team-list .hover {
     top: -100%;
     left: 0;
@@ -1464,6 +1452,8 @@ header {
       margin: 0 .5em;
       position: relative;
       z-index: 999; }
+    #team .team-list .hover .hidden {
+      display: none; }
     #team .team-list .hover h4 {
       font-size: 2.5em;
       margin-bottom: .6em; }
@@ -1492,6 +1482,33 @@ header {
     background-image: url("../img/team/jamie.jpg"); }
   #team .team-list #jun .static {
     background-image: url("../img/team/jun.jpg"); }
+  #team .team-list #hiring div .hiringbutton a {
+    display: inline-block;
+    background-color: #2a90a6;
+    color: white;
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .8em .9em;
+    border-bottom: 4px solid #257e92;
+    border-radius: 5px; }
+    #team .team-list #hiring div .hiringbutton a:active {
+      position: relative;
+      border: 0;
+      top: 4px;
+      margin-bottom: 4px; }
+  #team .team-list #hiring div span {
+    display: block;
+    font-size: 10em;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    color: #98a4a8; }
 
 #contact {
   background-color: #3fccea;
