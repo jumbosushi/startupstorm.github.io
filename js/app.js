@@ -1,6 +1,6 @@
 $( "#ventures>div>ul>li" )
 .mouseenter(function() {
-    $( this ).find(".hover").stop().animate({top: "0"}, 250);
+    $( this ).find(".hover").stop().animate({top: "0"}, 150);
 });
 $( "#ventures>div>ul>li" )
 .mouseleave(function() {
@@ -12,7 +12,7 @@ $( "#ventures>div>ul>li" )
 
 $( "#team>div>ul>li>div" )
 .mouseenter(function() {
-    $( this ).find(".hover").stop().animate({top: "0"}, 250);
+    $( this ).find(".hover").stop().animate({top: "0"}, 150);
 });
 $( "#team>div>ul>li>div" )
 .mouseleave(function() {

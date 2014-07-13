@@ -26,6 +26,20 @@ body {
 	padding-top: 60px; //to account for navigation fixed
 	background-color: $blue;
 }
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+// ********** INDEX PAGE ********** //
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+
 
 //////////////////////////////////
 // ********** HEADER ********** //
@@ -52,7 +66,9 @@ header {
 		a {
 			display: inline-block;
 			margin-left: 1em;
+			@media (max-width: 767px) {margin-left: .4em;}
 			color: white;
+			font-size: 1.2em;
 			line-height: 40px;
 			text-decoration: none;}
 	}
@@ -117,6 +133,19 @@ header {
 				top: 4px;
 				margin-bottom: 4px;
 			}
+			&:after {
+			content: '';
+			transform:rotate(45deg);
+			-ms-transform:rotate(45deg); /* IE 9 */
+			-webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+			border-top: 3px solid white;
+			border-right: 3px solid white;
+			float: right;
+			margin-left: 3px;
+			margin-top: 3px;
+			width: 10px;
+			height: 9px;
+		}
 		}
 	}
 
@@ -136,7 +165,7 @@ header {
 	p {
 		font-size: 1.3em;
 		line-height: 1.4em;
-
+		text-align: center;
 	}
 }
 
@@ -152,6 +181,7 @@ header {
 	}
 	
 	p {
+		text-align: center;
 		color: $grey;
 		font-size: 1.3em;
 		line-height: 1.4em;
@@ -159,11 +189,25 @@ header {
 	}
 
 	.venture-list {
+		.empty {
+			@media screen and (max-width: 767px) {display: none;}
+			.hover {
+				padding-top: 45%;
+				h4 {
+					font-size: 1.5em;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+
 		li {
 			position: relative;
 			border: 2px solid white;
 			overflow: hidden;
+			@media screen and (max-width: 500px) {width: 100%;}
 		
+
 		.static {
 			display: block;
 			background-color: $lightgrey;
@@ -212,8 +256,8 @@ header {
 				color: $blue;
 				width: auto;
 				font-size: 1em;
-				line-height: 1.2em;
-				padding: .4em;
+				line-height: 1.4em;
+				padding: .5em .6em .4em .6em;
 				text-transform: uppercase;
 				text-decoration: none;
 				&:hover {background-color: $darkblue; color: white;}
@@ -248,6 +292,7 @@ header {
 		font-size: 1.3em;
 		line-height: 1.4em;
 		margin-bottom: 4em;
+		text-align: center;
 	}
 
 	.team-list {
@@ -256,7 +301,7 @@ header {
 		border: 2px solid $lightgrey;
 		overflow: hidden;
 		margin-bottom: 2em;
-		@media  (max-width: 768px) { max-width: 500px; margin: 0 auto;}
+		@media screen and (max-width: 500px) {width: 100%;}
 
 		h3 {
 		color: $darkgrey;
@@ -275,6 +320,7 @@ header {
 		color: darken($grey, 15%);
 		font-size: 1em;
 		line-height: 1.6em;
+		text-align: left;
 			a {
 				color: $blue;
 				text-decoration: none;
@@ -342,34 +388,39 @@ header {
 			}
 		}
 
-		#hiring div {
+		#hiring .hover {
+		padding-top: 45%;
 			.hiringbutton {
-			a {
-			display: inline-block;
-			background-color: $darkblue;
-			color: white;
-			font-size: 1.1em;
-			margin: 0 auto;
-			text-transform: uppercase;
-			text-decoration: none;
-			padding: .8em .9em;
-			border-bottom: 4px solid darken($darkblue,5%);
-			border-radius: 5px;
-			&:active {
-				position: relative;
-				border: 0;
-				top: 4px;
-				margin-bottom: 4px;
+				a {
+				display: inline-block;
+				background-color: $darkblue;
+				color: white;
+				font-size: 1.1em;
+				margin: 0 auto;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: .8em .9em;
+				border-bottom: 4px solid darken($darkblue,5%);
+				border-radius: 5px;
+				&:active {
+					position: relative;
+					border: 0;
+					top: 4px;
+					margin-bottom: 4px;
+					}
+				}
 			}
 		}
-			}
+		li .static {
+			background-color: $grey;
 			span {
 				display: block;
-				font-size: 10em;
-				@include vertical-align;
+				font-size: 5em;
 				text-align: center;
 				width: 100%;
-				color: $grey;
+				@include vertical-align;
+				color: $lightgrey;
+				padding-bottom: 10%;
 			}
 		}
 	}
@@ -391,6 +442,7 @@ header {
 		font-size: 1.3em;
 		line-height: 1.4em;
 		margin-bottom: 4em;
+		text-align: center;
 	}
 
 	.icons {
@@ -405,4 +457,87 @@ header {
 		}
 	}
 
+}
+
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+// ********** JOIN PAGE ********** //
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+#join-body {
+	padding: 0 !important;
+}
+#join-intro {
+	text-align: center;
+	div.grid-25 {padding: 16px;}
+	.back-button {
+			display: inline-block;
+			background-color: $darkblue;
+			color: white;
+			font-size: 1.0em;
+			margin: 0 auto;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: .9em .9em .8em .9em;
+			border-bottom: 4px solid darken($darkblue,5%);
+			border-radius: 5px;
+			&:active {
+				position: relative;
+				border: 0;
+				top: 4px;
+				margin-bottom: 4px;
+			}
+
+		&:before {
+			content: '';
+			transform:rotate(-45deg);
+			-ms-transform:rotate(-45deg); /* IE 9 */
+			-webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+			border-top: 3px solid white;
+			border-left: 3px solid white;
+			float: left;
+			margin-right: 3px;
+			margin-top: 1px;
+			width: 10px;
+			height: 9px;
+		}
+		}
+	@extend #intro;
+	padding: 8em 0;
+	@media screen and (max-width: 500px) {padding: 1em 0 2em 0;;}
+	h1 {
+		text-align: center;
+		line-height: 1.2em;
+		margin: 0 auto;
+		display: inline-block;
+		font-size: 4em;
+		@media screen and (max-width: 500px) {font-size: 3em;}
+
+	}
+}
+
+#join-overview {
+	@extend #about;
+	background-color: $darkblue;
+	color: white;
+	p {
+		color: white;
+		text-align: left;
+		margin-bottom: 1em;
+	}
+}
+
+#join-why {
+	background-color: white;
+	@extend #about;
+	color: $darkgrey;
+	p {color: $grey;}
 }
