@@ -1429,35 +1429,35 @@ header {
     line-height: 1.4em;
     margin-bottom: 4em;
     text-align: center; }
-  #team .team-list li {
+  #team .team-list > div {
     min-height: 600px;
     position: relative;
     border: 2px solid #ebedee;
     overflow: hidden;
     margin-bottom: 2em; }
     @media screen and (max-width: 500px) {
-      #team .team-list li {
+      #team .team-list > div {
         width: 100%; } }
-    #team .team-list li:nth-of-type(4n+1) {
+    #team .team-list > div:nth-of-type(4n+1) {
       clear: left; }
-    #team .team-list li h3 {
+    #team .team-list > div h3 {
       color: #59686b;
       font-size: 1.4em;
       text-align: left;
       margin: .3em 0; }
-    #team .team-list li h4 {
+    #team .team-list > div h4 {
       color: #3fccea;
       font-size: 1.1em;
       margin: .5em 0; }
-    #team .team-list li p {
+    #team .team-list > div p {
       color: #6f7f84;
       font-size: 1em;
       line-height: 1.6em;
       text-align: left; }
-      #team .team-list li p a {
+      #team .team-list > div p a {
         color: #3fccea;
         text-decoration: none; }
-    #team .team-list li .static {
+    #team .team-list > divl .static {
       display: block;
       background-color: #ebedee;
       border-style: outset;
@@ -1551,9 +1551,9 @@ header {
         margin-top: 3px;
         width: 10px;
         height: 9px; }
-  #team .team-list li .static {
+  #team .team-list > div .static {
     background-color: #98a4a8; }
-    #team .team-list li .static span {
+    #team .team-list > div .static span {
       display: block;
       font-size: 5em;
       text-align: center;
@@ -1663,10 +1663,10 @@ header {
     #join-nav article h4 {
       font-style: italic;
       margin-bottom: 1em; }
-    #join-nav article ul li {
+    #join-nav article ul > div {
       margin-left: 1em;
       list-style-type: square; }
-    #join-nav article ul li h5 {
+    #join-nav article ul > div h5 {
       color: #18bbde;
       text-decoration: none;
       font-size: 1.5em;
