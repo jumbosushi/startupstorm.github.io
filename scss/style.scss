@@ -17,8 +17,43 @@
   transform: translateY(-50%);
 }
 
+@mixin button ($color) {
+
+			display: inline-block;
+			background-color: $color;
+			color: white;
+			font-size: 1.1em;
+			margin: 0 auto;
+			margin-top: 3em;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: .8em .9em;
+			border-bottom: 4px solid darken($color,5%);
+			border-radius: 5px;
+			&:active {
+				position: relative;
+				border: 0;
+				top: 4px;
+				margin-bottom: 4px;
+			}
+			&:after {
+			content: '';
+			transform:rotate(45deg);
+			-ms-transform:rotate(45deg); /* IE 9 */
+			-webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+			border-top: 3px solid white;
+			border-right: 3px solid white;
+			float: right;
+			margin-left: 3px;
+			margin-top: 3px;
+			width: 10px;
+			height: 9px;
+			}
+}
+
 .active {display: block !important;}
 .hidden {display: none !important;}
+
 
 body {
 	text-rendering: optimizeLegibility;
@@ -114,38 +149,9 @@ header {
 				&:after {content: '';}
 			}
 		}
-		.button {text-align: center;}
-		a {
-			display: inline-block;
-			background-color: $darkblue;
-			color: white;
-			font-size: 1.1em;
-			margin: 0 auto;
-			margin-top: 3em;
-			text-transform: uppercase;
-			text-decoration: none;
-			padding: .8em .9em;
-			border-bottom: 4px solid darken($darkblue,5%);
-			border-radius: 5px;
-			&:active {
-				position: relative;
-				border: 0;
-				top: 4px;
-				margin-bottom: 4px;
-			}
-			&:after {
-			content: '';
-			transform:rotate(45deg);
-			-ms-transform:rotate(45deg); /* IE 9 */
-			-webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
-			border-top: 3px solid white;
-			border-right: 3px solid white;
-			float: right;
-			margin-left: 3px;
-			margin-top: 3px;
-			width: 10px;
-			height: 9px;
-		}
+		.intro-button {text-align: center;}
+		.intro-button a {
+			@include button ($darkblue);
 		}
 	}
 
@@ -250,7 +256,7 @@ header {
 				margin-bottom: .6em;
 			}
 			
-			.button {
+			.learn-button {
 				display: inline-block;
 				background-color: white;
 				color: $blue;
@@ -390,25 +396,9 @@ header {
 
 		#hiring .hover {
 		padding-top: 45%;
-			.hiringbutton {
-				a {
-				display: inline-block;
-				background-color: $darkblue;
-				color: white;
-				font-size: 1.1em;
-				margin: 0 auto;
-				text-transform: uppercase;
-				text-decoration: none;
-				padding: .8em .9em;
-				border-bottom: 4px solid darken($darkblue,5%);
-				border-radius: 5px;
-				&:active {
-					position: relative;
-					border: 0;
-					top: 4px;
-					margin-bottom: 4px;
-					}
-				}
+			.hiringbutton a {
+				@include button ($darkblue);
+				margin-top: 0;
 			}
 		}
 		li .static {
@@ -532,12 +522,60 @@ header {
 		color: white;
 		text-align: left;
 		margin-bottom: 1em;
+		em {font-weight: 700;}
 	}
 }
 
-#join-why {
+#join-nav {
 	background-color: white;
 	@extend #about;
 	color: $darkgrey;
-	p {color: $grey;}
+	article {
+		margin-bottom: 1.2em;
+		h3 {
+			color: $darkblue;
+			font-size: 3em;
+		}
+		h4 {
+			font-style: italic;
+			margin-bottom: 1em;
+		}
+		ul li {
+			margin-left: 1em;
+			list-style-type: square;}
+		ul li h5 {
+			color: darken($blue,10%);
+			text-decoration: none;
+			font-size: 1.5em;
+			line-height: 1.5em;
+		}
+	}
+	.download 
+	{
+		text-align: center;
+		a {
+			@include button ($darkblue);
+			&:after{content: none}
+			position: relative;
+
+			span{
+			&:before {
+				display: inline-block;
+				line-height: .1em;
+				position: relative;
+				margin-left: .2em;
+				top: 4px;
+				font-size: 1.4em;
+				}
+			}
+		}
+	}
+}
+
+
+#join-why {
+	background-color: $blue;
+	@extend #about;
+	color: white;
+	p {color: white;}
 }

@@ -1275,9 +1275,9 @@ header {
         color: #2a90a6; }
       #intro .event span:last-of-type:after, #join-intro .event span:last-of-type:after {
         content: ''; }
-    #intro .event .button, #join-intro .event .button {
+    #intro .event .intro-button, #join-intro .event .intro-button {
       text-align: center; }
-    #intro .event a, #join-intro .event a {
+    #intro .event .intro-button a, #join-intro .event .intro-button a {
       display: inline-block;
       background-color: #2a90a6;
       color: white;
@@ -1289,12 +1289,12 @@ header {
       padding: .8em .9em;
       border-bottom: 4px solid #257e92;
       border-radius: 5px; }
-      #intro .event a:active, #join-intro .event a:active {
+      #intro .event .intro-button a:active, #join-intro .event .intro-button a:active {
         position: relative;
         border: 0;
         top: 4px;
         margin-bottom: 4px; }
-      #intro .event a:after, #join-intro .event a:after {
+      #intro .event .intro-button a:after, #join-intro .event .intro-button a:after {
         content: '';
         transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -1309,16 +1309,16 @@ header {
         width: 10px;
         height: 9px; }
 
-#about, #join-overview, #join-why {
+#about, #join-overview, #join-nav, #join-why {
   background-color: #2a90a6;
   color: white;
   padding: 7em 0;
   font-family: 'raleway', sans-serif; }
-  #about h2, #join-overview h2, #join-why h2 {
+  #about h2, #join-overview h2, #join-nav h2, #join-why h2 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 1em; }
-  #about p, #join-overview p, #join-why p {
+  #about p, #join-overview p, #join-nav p, #join-why p {
     font-size: 1.3em;
     line-height: 1.4em;
     text-align: center; }
@@ -1394,7 +1394,7 @@ header {
     #ventures .venture-list .hover h4 {
       font-size: 2.5em;
       margin-bottom: .6em; }
-    #ventures .venture-list .hover .button {
+    #ventures .venture-list .hover .learn-button {
       display: inline-block;
       background-color: white;
       color: #3fccea;
@@ -1404,7 +1404,7 @@ header {
       padding: .5em .6em .4em .6em;
       text-transform: uppercase;
       text-decoration: none; }
-      #ventures .venture-list .hover .button:hover {
+      #ventures .venture-list .hover .learn-button:hover {
         background-color: #2a90a6;
         color: white; }
   #ventures .venture-list #nwhacks {
@@ -1522,16 +1522,32 @@ header {
       color: white;
       font-size: 1.1em;
       margin: 0 auto;
+      margin-top: 3em;
       text-transform: uppercase;
       text-decoration: none;
       padding: .8em .9em;
       border-bottom: 4px solid #257e92;
-      border-radius: 5px; }
+      border-radius: 5px;
+      margin-top: 0; }
       #team .team-list #hiring .hover .hiringbutton a:active {
         position: relative;
         border: 0;
         top: 4px;
         margin-bottom: 4px; }
+      #team .team-list #hiring .hover .hiringbutton a:after {
+        content: '';
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -webkit-transform: rotate(45deg);
+        /* Opera, Chrome, and Safari */
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        float: right;
+        margin-left: 3px;
+        margin-top: 3px;
+        width: 10px;
+        height: 9px; }
   #team .team-list li .static {
     background-color: #98a4a8; }
     #team .team-list li .static span {
@@ -1630,9 +1646,74 @@ header {
     color: white;
     text-align: left;
     margin-bottom: 1em; }
+    #join-overview p em {
+      font-weight: 700; }
 
-#join-why {
+#join-nav {
   background-color: white;
   color: #59686b; }
+  #join-nav article {
+    margin-bottom: 1.2em; }
+    #join-nav article h3 {
+      color: #2a90a6;
+      font-size: 3em; }
+    #join-nav article h4 {
+      font-style: italic;
+      margin-bottom: 1em; }
+    #join-nav article ul li {
+      margin-left: 1em;
+      list-style-type: square; }
+    #join-nav article ul li h5 {
+      color: #18bbde;
+      text-decoration: none;
+      font-size: 1.5em;
+      line-height: 1.5em; }
+  #join-nav .download {
+    text-align: center; }
+    #join-nav .download a {
+      display: inline-block;
+      background-color: #2a90a6;
+      color: white;
+      font-size: 1.1em;
+      margin: 0 auto;
+      margin-top: 3em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: .8em .9em;
+      border-bottom: 4px solid #257e92;
+      border-radius: 5px;
+      position: relative; }
+      #join-nav .download a:active {
+        position: relative;
+        border: 0;
+        top: 4px;
+        margin-bottom: 4px; }
+      #join-nav .download a:after {
+        content: '';
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -webkit-transform: rotate(45deg);
+        /* Opera, Chrome, and Safari */
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        float: right;
+        margin-left: 3px;
+        margin-top: 3px;
+        width: 10px;
+        height: 9px; }
+      #join-nav .download a:after {
+        content: none; }
+      #join-nav .download a span:before {
+        display: inline-block;
+        line-height: .1em;
+        position: relative;
+        margin-left: .2em;
+        top: 4px;
+        font-size: 1.4em; }
+
+#join-why {
+  background-color: #3fccea;
+  color: white; }
   #join-why p {
-    color: #98a4a8; }
+    color: white; }
