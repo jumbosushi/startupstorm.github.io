@@ -1457,7 +1457,7 @@ header {
       #team .team-list > div p a {
         color: #3fccea;
         text-decoration: none; }
-    #team .team-list > divl .static {
+    #team .team-list .grid-25 .static {
       display: block;
       background-color: #ebedee;
       border-style: outset;
@@ -1663,10 +1663,10 @@ header {
     #join-nav article h4 {
       font-style: italic;
       margin-bottom: 1em; }
-    #join-nav article ul > div {
+    #join-nav article ul li {
       margin-left: 1em;
       list-style-type: square; }
-    #join-nav article ul > div h5 {
+    #join-nav article ul li h5 {
       color: #18bbde;
       text-decoration: none;
       font-size: 1.5em;
