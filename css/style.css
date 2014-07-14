@@ -1430,6 +1430,7 @@ header {
     margin-bottom: 4em;
     text-align: center; }
   #team .team-list li {
+    min-height: 600px;
     position: relative;
     border: 2px solid #ebedee;
     overflow: hidden;
@@ -1437,6 +1438,8 @@ header {
     @media screen and (max-width: 500px) {
       #team .team-list li {
         width: 100%; } }
+    #team .team-list li:nth-of-type(4n+1) {
+      clear: left; }
     #team .team-list li h3 {
       color: #59686b;
       font-size: 1.4em;
