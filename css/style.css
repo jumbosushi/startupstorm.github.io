@@ -1517,6 +1517,9 @@ header {
     background-image: url("../img/team/jamie.jpg"); }
   #team .team-list #jun .static {
     background-image: url("../img/team/jun.jpg"); }
+  #team .team-list #hiring .static {
+       background-color: #98a4a8;
+  }
   #team .team-list #hiring .hover {
     padding-top: 45%; }
     #team .team-list #hiring .hover .hiringbutton a {
