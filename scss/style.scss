@@ -1,4 +1,4 @@
-// MAIN STYLESHEET -- style.scssgu
+// MAIN STYLESHEET -- style.scss
 
 // Imports ***********************
 @import 'reset';
@@ -303,11 +303,15 @@ header {
 
 	.team-list {
 	li {
+		min-height: 600px;
 		position: relative;
 		border: 2px solid $lightgrey;
 		overflow: hidden;
 		margin-bottom: 2em;
 		@media screen and (max-width: 500px) {width: 100%;}
+		&:nth-of-type(4n+1) {
+  	  	clear:left;
+  	  	}
 
 		h3 {
 		color: $darkgrey;
