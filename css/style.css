@@ -1663,6 +1663,8 @@ header {
     #join-nav article h3 {
       color: #2a90a6;
       font-size: 3em; }
+    #join-nav article ul {
+      overflow: auto;}
     #join-nav article h4 {
       font-style: italic;
       margin-bottom: 1em; }
