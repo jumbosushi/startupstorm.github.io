@@ -82,7 +82,7 @@ body {
 
 header {
 	padding: 20px;
-	@media (max-width: 767px) {padding: 10px;}
+	@media (max-width: 767px) {padding: 5px 0;}
 	background-color: $blue;
 	overflow: auto;
 	position: fixed; top: 0; left: 0; right: 0;
@@ -90,7 +90,7 @@ header {
 	#logo {
 		float: left;
 		position: relative;
-		@media (max-width: 767px) {text-align: center; width: 100%;}
+		@media (max-width: 767px) {text-align: center; width: 100%; padding: 0;}
 		img {
 			max-width: 302px;
 		}

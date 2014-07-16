@@ -1214,14 +1214,15 @@ header {
   z-index: 9999; }
   @media (max-width: 767px) {
     header {
-      padding: 10px; } }
+      padding: 5px 0; } }
   header #logo {
     float: left;
     position: relative; }
     @media (max-width: 767px) {
       header #logo {
         text-align: center;
-        width: 100%; } }
+        width: 100%;
+        padding: 0; } }
     header #logo img {
       max-width: 302px; }
   header nav {
