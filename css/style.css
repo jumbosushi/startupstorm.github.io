@@ -1204,7 +1204,7 @@ body {
   background-color: #3fccea; }
 
 header {
-  padding: 10px;
+  padding: 20px;
   background-color: #3fccea;
   overflow: auto;
   position: fixed;
@@ -1212,6 +1212,9 @@ header {
   left: 0;
   right: 0;
   z-index: 9999; }
+  @media (max-width: 767px) {
+    header {
+      padding: 10px; } }
   header #logo {
     float: left;
     position: relative; }
@@ -1223,12 +1226,13 @@ header {
       max-width: 302px; }
   header nav {
     float: right;
-    font-family: 'raleway', sans-serif; }
+    font-family: 'Oxygen', sans-serif; }
     @media (max-width: 767px) {
       header nav {
         text-align: center;
         width: 100%;
-        float: none; } }
+        float: none;
+        font-size: .9em; } }
     header nav a {
       display: inline-block;
       margin-left: 1em;
@@ -1243,7 +1247,7 @@ header {
 #intro, #join-intro {
   background-color: #3fccea;
   color: white;
-  font-family: 'raleway', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   padding: 6em 0;
   overflow: hidden; }
   #intro h1, #join-intro h1 {
@@ -1309,24 +1313,28 @@ header {
         width: 10px;
         height: 9px; }
 
-#about, #join-overview, #join-nav, #join-why {
-  background-color: #2a90a6;
+#about, #join-overview, #join-nav {
+  background-image: url("../img/about.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
   color: white;
   padding: 7em 0;
-  font-family: 'raleway', sans-serif; }
-  #about h2, #join-overview h2, #join-nav h2, #join-why h2 {
+  font-family: 'Oxygen', sans-serif; }
+  #about h2, #join-overview h2, #join-nav h2 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 1em; }
-  #about p, #join-overview p, #join-nav p, #join-why p {
+  #about p, #join-overview p, #join-nav p {
     font-size: 1.3em;
     line-height: 1.4em;
-    text-align: center; }
+    text-align: left; }
+    #about p em, #join-overview p em, #join-nav p em {
+      font-weight: 700; }
 
 #ventures {
   background-color: white;
   padding: 7em 0;
-  font-family: 'raleway', sans-serif; }
+  font-family: 'Oxygen', sans-serif; }
   #ventures h2 {
     color: #59686b;
     font-size: 2.5em;
@@ -1417,7 +1425,7 @@ header {
 #team {
   background-color: #ebedee;
   padding: 7em 0;
-  font-family: 'raleway', sans-serif; }
+  font-family: 'Oxygen', sans-serif; }
   #team h2 {
     color: #59686b;
     font-size: 2.5em;
@@ -1429,35 +1437,34 @@ header {
     line-height: 1.4em;
     margin-bottom: 4em;
     text-align: center; }
-  #team .team-list > div {
-    min-height: 600px;
+  #team .team-list li {
     position: relative;
     border: 2px solid #ebedee;
     overflow: hidden;
     margin-bottom: 2em; }
     @media screen and (max-width: 500px) {
-      #team .team-list > div {
+      #team .team-list li {
         width: 100%; } }
-    #team .team-list > div:nth-of-type(4n+1) {
+    #team .team-list li:nth-of-type(4n+1) {
       clear: left; }
-    #team .team-list > div h3 {
+    #team .team-list li h3 {
       color: #59686b;
       font-size: 1.4em;
       text-align: left;
       margin: .3em 0; }
-    #team .team-list > div h4 {
+    #team .team-list li h4 {
       color: #3fccea;
       font-size: 1.1em;
       margin: .5em 0; }
-    #team .team-list > div p {
+    #team .team-list li p {
       color: #6f7f84;
       font-size: 1em;
       line-height: 1.6em;
       text-align: left; }
-      #team .team-list > div p a {
+      #team .team-list li p a {
         color: #3fccea;
         text-decoration: none; }
-    #team .team-list .grid-25 .static {
+    #team .team-list li .static {
       display: block;
       background-color: #ebedee;
       border-style: outset;
@@ -1517,9 +1524,6 @@ header {
     background-image: url("../img/team/jamie.jpg"); }
   #team .team-list #jun .static {
     background-image: url("../img/team/jun.jpg"); }
-  #team .team-list #hiring .static {
-       background-color: #98a4a8;
-  }
   #team .team-list #hiring .hover {
     padding-top: 45%; }
     #team .team-list #hiring .hover .hiringbutton a {
@@ -1554,9 +1558,9 @@ header {
         margin-top: 3px;
         width: 10px;
         height: 9px; }
-  #team .team-list > div .static {
+  #team .team-list li .static {
     background-color: #98a4a8; }
-    #team .team-list > div .static span {
+    #team .team-list li .static span {
       display: block;
       font-size: 5em;
       text-align: center;
@@ -1572,7 +1576,7 @@ header {
 #contact {
   background-color: #3fccea;
   padding: 7em 0;
-  font-family: 'raleway', sans-serif; }
+  font-family: 'Oxygen', sans-serif; }
   #contact h2 {
     color: white;
     font-size: 2.5em;
@@ -1646,6 +1650,7 @@ header {
         font-size: 3em; } }
 
 #join-overview {
+  background-image: none;
   background-color: #2a90a6;
   color: white; }
   #join-overview p {
@@ -1656,6 +1661,7 @@ header {
       font-weight: 700; }
 
 #join-nav {
+  background-image: none;
   background-color: white;
   color: #59686b; }
   #join-nav article {
@@ -1663,8 +1669,6 @@ header {
     #join-nav article h3 {
       color: #2a90a6;
       font-size: 3em; }
-    #join-nav article ul {
-      overflow: auto;}
     #join-nav article h4 {
       font-style: italic;
       margin-bottom: 1em; }
@@ -1720,9 +1724,3 @@ header {
         margin-left: .2em;
         top: 4px;
         font-size: 1.4em; }
-
-#join-why {
-  background-color: #3fccea;
-  color: white; }
-  #join-why p {
-    color: white; }

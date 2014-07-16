@@ -81,7 +81,8 @@ body {
 //////////////////////////////////
 
 header {
-	padding: 10px;
+	padding: 20px;
+	@media (max-width: 767px) {padding: 10px;}
 	background-color: $blue;
 	overflow: auto;
 	position: fixed; top: 0; left: 0; right: 0;
@@ -96,8 +97,8 @@ header {
 	}
 	nav {
 		float: right;
-		font-family: 'raleway', sans-serif;
-		@media (max-width: 767px) {text-align: center; width: 100%; float: none;}
+		font-family: 'Oxygen', sans-serif;
+		@media (max-width: 767px) {text-align: center; width: 100%; float: none; font-size: .9em;}
 		a {
 			display: inline-block;
 			margin-left: 1em;
@@ -113,7 +114,7 @@ header {
 #intro {
 	background-color: $blue;
 	color: white;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	padding: 6em 0;
 	overflow: hidden;
 	h1 {
@@ -158,10 +159,14 @@ header {
 }
 
 #about {
-	background-color: $darkblue;
+	// background-color: $darkblue;
+	background-image: url('../img/about.jpg');	
+	background-size: cover;
+	background-position: 50% 50%;
 	color: white;
 	padding: 7em 0;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Oxygen', sans-serif;
+
 	h2 {
 		font-size: 2.5em;
 		text-align: center;
@@ -171,14 +176,15 @@ header {
 	p {
 		font-size: 1.3em;
 		line-height: 1.4em;
-		text-align: center;
+		text-align: left;
+	em {font-weight: 700;}
 	}
 }
 
 #ventures {
 	background-color: white;
 	padding: 7em 0;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	h2 {
 		color: $darkgrey;
 		font-size: 2.5em;
@@ -285,7 +291,7 @@ header {
 #team {
 	background-color: $lightgrey;
 	padding: 7em 0;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	h2 {
 		color: $darkgrey;
 		font-size: 2.5em;
@@ -303,7 +309,6 @@ header {
 
 	.team-list {
 	li {
-		min-height: 600px;
 		position: relative;
 		border: 2px solid $lightgrey;
 		overflow: hidden;
@@ -423,7 +428,7 @@ header {
 #contact {
 	background-color: $blue;
 	padding: 7em 0;
-	font-family: 'raleway', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	h2 {
 		color: white;
 		font-size: 2.5em;
@@ -520,6 +525,7 @@ header {
 
 #join-overview {
 	@extend #about;
+	background-image: none;
 	background-color: $darkblue;
 	color: white;
 	p {
@@ -531,8 +537,9 @@ header {
 }
 
 #join-nav {
-	background-color: white;
 	@extend #about;
+	background-image: none;
+	background-color: white;
 	color: $darkgrey;
 	article {
 		margin-bottom: 1.2em;
@@ -577,10 +584,3 @@ header {
 	}
 }
 
-
-#join-why {
-	background-color: $blue;
-	@extend #about;
-	color: white;
-	p {color: white;}
-}
