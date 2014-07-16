@@ -1677,6 +1677,7 @@ header {
       font-size: 1.5em;
       line-height: 1.5em; }
   #join-nav .download {
+    clear: left;
     text-align: center; }
     #join-nav .download a {
       display: inline-block;
