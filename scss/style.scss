@@ -556,6 +556,7 @@ header {
 	}
 	.download 
 	{
+		clear:left;
 		text-align: center;
 		a {
 			@include button ($darkblue);
