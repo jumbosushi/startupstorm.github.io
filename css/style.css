@@ -1664,7 +1664,8 @@ header {
 #join-nav {
   background-image: none;
   background-color: white;
-  color: #59686b; }
+  color: #59686b;
+  overflow: auto; }
   #join-nav article {
     margin-bottom: 1.2em; }
     #join-nav article h3 {
