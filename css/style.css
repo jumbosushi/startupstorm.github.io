@@ -29,10 +29,10 @@ blockquote:before, blockquote:after {
 
 .disclaimer {
    padding-top:25px;
-   color:white;
+   color:red;
 }
 .disclaimer small {
-   font-size:12px;
+   font-size:15px;
 }
 
 q:before, q:after {
