@@ -1429,7 +1429,9 @@ header {
     #ventures .venture-list #nwhacks-micro:before {
       background-color: #FEFEFE; }
     #ventures .venture-list #nwhacks-micro:after {
-      background-image: url("../img/ventures/micro-logo.png"); }
+      background-image: url("../img/ventures/micro-logo.png"); 
+      background-size: 100px auto;
+    }
 
   #ventures .venture-list #nwhacks {
     background-image: url("../img/ventures/nwhacks-bg.jpg"); }
