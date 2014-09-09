@@ -1424,7 +1424,7 @@ header {
       #ventures .venture-list .hover .learn-button:hover {
         background-color: #2a90a6;
         color: white; }
-     #ventures .venture-list #nwhacks-micro {
+   #ventures .venture-list #nwhacks-micro {
     background-image: url("../img/ventures/nwhacks-bg.jpg"); }
     #ventures .venture-list #nwhacks-micro:before {
       background-color: #FEFEFE; }
