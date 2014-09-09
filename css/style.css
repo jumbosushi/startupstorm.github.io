@@ -1424,6 +1424,13 @@ header {
       #ventures .venture-list .hover .learn-button:hover {
         background-color: #2a90a6;
         color: white; }
+     #ventures .venture-list #nwhacks {
+    background-image: url("../img/ventures/nwhacks-bg.jpg"); }
+    #ventures .venture-list #nwhacks:before {
+      background-color: #FEFEFE; }
+    #ventures .venture-list #nwhacks:after {
+      background-image: url("../img/ventures/micro-logo.png"); }
+
   #ventures .venture-list #nwhacks {
     background-image: url("../img/ventures/nwhacks-bg.jpg"); }
     #ventures .venture-list #nwhacks:before {
