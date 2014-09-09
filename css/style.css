@@ -1431,7 +1431,7 @@ header {
     #ventures .venture-list #nwhacks-micro:after {
       background-image: url("../img/ventures/micro-logo.png"); 
       background-size: 280px auto;
-      background-position: 55% 50%; 
+      background-position: 50% 160%; 
     }
 
   #ventures .venture-list #nwhacks {
