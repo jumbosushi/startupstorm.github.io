@@ -1425,12 +1425,13 @@ header {
         background-color: #2a90a6;
         color: white; }
    #ventures .venture-list #nwhacks-micro {
-    background-image: url("../img/ventures/nwhacks-bg.jpg"); }
+    background-image: url("../img/ventures/background_image1.jpg"); }
     #ventures .venture-list #nwhacks-micro:before {
       background-color: #FEFEFE; }
     #ventures .venture-list #nwhacks-micro:after {
       background-image: url("../img/ventures/micro-logo.png"); 
-      background-size: 100px auto;
+      background-size: 280px auto;
+      background-position: 50% 160%; 
     }
 
   #ventures .venture-list #nwhacks {
