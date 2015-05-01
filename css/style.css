@@ -1700,6 +1700,7 @@ header {
       text-decoration: none;
       font-size: 1.5em;
       line-height: 1.5em; }
+      
   #join-nav .download {
     clear: left;
     text-align: center; }
@@ -1744,3 +1745,47 @@ header {
         margin-left: .2em;
         top: 4px;
         font-size: 1.4em; }
+        
+        
+      #join-nav .apply a {
+      display: inline-block;
+      background-color: #2a90a6;
+      color: white;
+      font-size: 1.1em;
+      margin: 0 auto;
+      margin-top: 3em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: .8em .9em;
+      border-bottom: 4px solid #257e92;
+      border-radius: 5px;
+      position: relative; }
+      #join-nav .apply a:active {
+        position: relative;
+        border: 0;
+        top: 4px;
+        margin-bottom: 4px; }
+      #join-nav .apply a:after {
+        content: '';
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -webkit-transform: rotate(45deg);
+        /* Opera, Chrome, and Safari */
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        float: right;
+        margin-left: 3px;
+        margin-top: 3px;
+        width: 10px;
+        height: 9px; }
+      #join-nav .apply a:after {
+        content: none; }
+      #join-nav .apply a span:before {
+        display: inline-block;
+        line-height: .1em;
+        position: relative;
+        margin-left: .2em;
+        top: 4px;
+        font-size: 1.4em; }
+        
