@@ -1793,3 +1793,10 @@ header {
         border-bottom: #2A90A6 3px solid;
         margin: 20px 200px 40px auto;
       }
+      
+      #join-nav li.grid-container blockquote p {
+         font-size: .85em;
+         font-style: italic;
+         margin-top: 0.4em;
+         margin-right: 8em;
+      }
