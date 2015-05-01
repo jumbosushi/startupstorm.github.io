@@ -1687,7 +1687,7 @@ header {
   #join-nav article {
     margin-bottom: 1.2em; }
     #join-nav article h3 {
-      color: black;/*#2a90a6;*/
+      color: #2A90A6;/*#2a90a6;*/
       font-size: 3em; }
     #join-nav article h4 {
       font-style: italic;
@@ -1696,7 +1696,7 @@ header {
       margin-left: 1em;
       list-style-type: square; }
     #join-nav article ul li h5 {
-      color: black;
+      color: #2A90A6;
       text-decoration: none;
       font-size: 1.5em;
       line-height: 1.5em; }
