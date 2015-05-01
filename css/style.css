@@ -1749,14 +1749,14 @@ header {
         
       #join-nav .apply a {
       display: inline-block;
-      background-color: #2a90a6;
+      background-color: #3fccea;
       color: white;
       font-size: 1.1em;
       margin: 0 auto;
       text-transform: uppercase;
       text-decoration: none;
       padding: .8em .9em;
-      border-bottom: 4px solid #257e92;
+      border-bottom: 4px solid #37b3cc;
       border-radius: 5px;
       position: relative; }
       #join-nav .apply a:active {
@@ -1787,4 +1787,9 @@ header {
         margin-left: .2em;
         top: 4px;
         font-size: 1.4em; }
-        
+      
+      #join-nav li.grid-container {
+        padding: 50px 0px 20px 0;
+        border-bottom: #2A90A6 3px solid;
+        margin: 20px 200px 40px auto;
+      }
