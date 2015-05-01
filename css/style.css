@@ -1687,7 +1687,7 @@ header {
   #join-nav article {
     margin-bottom: 1.2em; }
     #join-nav article h3 {
-      color: #2a90a6;
+      color: black;/*#2a90a6;*/
       font-size: 3em; }
     #join-nav article h4 {
       font-style: italic;
