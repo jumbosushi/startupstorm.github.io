@@ -18,6 +18,42 @@
 </head>
 
 <body>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <section id="intro">
+  
+  
+  <article class="inputs">
+    <form class="prefix-33 suffix-33 grid-33 tablet-grid-60 tablet-prefix-20 tablet-suffix-20" action="">
+      <h2>Signup for our mailing list</h2>
+      <label>Personal</label>
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="text" placeholder="Email">
+
+      <label>Professional</label>
+      <input type="text" placeholder="School">
+      <input type="text" placeholder="GitHub">
+      <input type="text" placeholder="LinkedIn">
+
+      <label>How did you find out about us?</label>
+      <select>
+        <option value="facebook">Facebook</option>
+        <option value="bulletin_post">Bulletin post</option>
+        <option value="word_of_mouth">Word of mouth</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="submit" value="Submit">      
+    </form>
+    
+  </article>
+</section>
+    </div>
+  </div>
+</div>  
+  
+  
 <header id="header">
   <img src="//stormtalks.github.io/img/header.png" alt="">
 </header>
@@ -43,7 +79,7 @@
         <span>Apply to give a Talk</span>
       </div>
       <div class="button grid-20 prefix-5">
-        <span>Pre-register Now</span>
+        <span data-toggle="modal" data-target=".bs-example-modal-lg">Pre-register Now</span>
       </div>
     </div>
   </article>
