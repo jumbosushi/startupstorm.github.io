@@ -19,42 +19,65 @@
 </head>
 
 <body>
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="modal fade register-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
       <section id="intro">
-  
-  
-  <article class="inputs">
-
-    <form class="prefix-20 suffix-20 grid-60 tablet-grid-80 tablet-prefix-10 tablet-suffix-10" action="">
-      <h2>Signup for our mailing list</h2>
-      <label>Personal</label>
-      <input type="text" placeholder="First Name">
-      <input type="text" placeholder="Last Name">
-      <input type="text" placeholder="Email">
-
-      <label>Professional</label>
-      <input type="text" placeholder="School">
-      <input type="text" placeholder="GitHub">
-      <input type="text" placeholder="LinkedIn">
-
-      <label>How did you find out about us?</label>
-      <select>
-        <option value="facebook">Facebook</option>
-        <option value="bulletin_post">Bulletin post</option>
-        <option value="word_of_mouth">Word of mouth</option>
-        <option value="other">Other</option>
-      </select>
-      <input type="submit" value="Submit">      
-    </form>
-    
-  </article>
-</section>
+        <article class="inputs">
+      
+          <form class="prefix-20 suffix-20 grid-60 tablet-grid-80 tablet-prefix-10 tablet-suffix-10" action="">
+            <h2>Register for StormTalks</h2>
+            <label>Personal</label>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Email">
+      
+                        <label>Professional</label>
+            <input type="text" placeholder="School">
+            <input type="text" placeholder="GitHub">
+            <input type="text" placeholder="LinkedIn">
+      
+            <label>Current year of school</label>
+            <select>
+              <option value="highschool">Highschool</option>
+              <option value="1st">1st Year</option>
+              <option value="2nd">2nd Year</option>
+              <option value="3rd">3rd Year</option>
+              <option value="4th">4+ Year</option>
+              <option value="masters">Masters</option>
+              <option value="phd">Phd</option>
+            </select>
+      
+            <input type="submit" value="Submit">      
+          </form>
+          
+        </article>
+      </section>
     </div>
   </div>
 </div>  
-  
+
+<div class="modal fade preregister-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <section id="intro">
+        <article class="inputs">
+      
+          <form class="prefix-20 suffix-20 grid-60 tablet-grid-80 tablet-prefix-10 tablet-suffix-10" action="">
+            <h2>Pre-Register for StormTalks</h2>
+
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Email">
+      
+            <input type="submit" value="Submit">      
+          </form>
+          
+        </article>
+      </section>
+    </div>
+  </div>
+</div>  
   
 <header id="header">
   <img src="//stormtalks.github.io/img/header.png" alt="">
@@ -81,7 +104,7 @@
         <span>Apply to give a Talk</span>
       </div>
       <div class="button grid-20 prefix-5">
-        <span data-toggle="modal" data-target=".bs-example-modal-lg">Pre-register Now</span>
+        <span data-toggle="modal" data-target=".preregister-modal">Pre-register Now</span>
       </div>
     </div>
   </article>
