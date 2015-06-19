@@ -1672,15 +1672,17 @@ header img {
     background-color: #fafafa
 }
 #intro .inputs form {
-    padding-top: 2em;
+    padding-top: 3.5em;
     font-family: 'lato', sans-serif;
     text-align: left
 }
 #intro .inputs form h2 {
     color: #bac4c6;
     font-size: 1.5em;
-    font-weight: 900
+    font-weight: 900;
+    padding-bottom:0.8em;
 }
+
 #intro .inputs form label {
     color: #666;
     font-size: 1.2em;
