@@ -1748,12 +1748,12 @@ header img {
     position: relative;
 }
 
-#intro .button a:active {
+#intro .button span:active {
   position: relative;
   border: 0;
   top: 4px;
   margin-bottom: 4px; }
-#intro .button a:after {
+#intro .button span:after {
   content: '';
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1767,7 +1767,7 @@ header img {
   margin-top: 3px;
   width: 10px;
   height: 9px; }
-#intro .button a:after {
+#intro .button span:after {
   content: none; }
 #intro .button a span:before {
   display: inline-block;
