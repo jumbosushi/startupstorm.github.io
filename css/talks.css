@@ -1643,7 +1643,7 @@ header img {
     margin-bottom: 4em
 }
 #intro .info .logo {
-    max-width: 225px;
+    /*max-width: 225px;*/
     display: inline-block;
     margin-bottom: 1em
 }
