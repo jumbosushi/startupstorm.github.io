@@ -1734,6 +1734,49 @@ header img {
     padding: 0% 9% 5% 1%;
 }
 
+#intro .button {
+    display: inline-block;
+    background-color: #3fccea;
+    color: white;
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .8em .9em;
+    border-bottom: 4px solid #37b3cc;
+    border-radius: 5px;
+    position: relative;
+}
+
+#intro .button a:active {
+  position: relative;
+  border: 0;
+  top: 4px;
+  margin-bottom: 4px; }
+#intro .button a:after {
+  content: '';
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Opera, Chrome, and Safari */
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  float: right;
+  margin-left: 3px;
+  margin-top: 3px;
+  width: 10px;
+  height: 9px; }
+#intro .button a:after {
+  content: none; }
+#intro .button a span:before {
+  display: inline-block;
+  line-height: .1em;
+  position: relative;
+  margin-left: .2em;
+  top: 4px;
+  font-size: 1.4em; }
+
 footer {
     background-color: #0dabe2;
     padding: 2em 0;
