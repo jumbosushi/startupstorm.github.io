@@ -23,7 +23,7 @@ $(function() {
         $modal = $('.preregister-modal');
 
         $("form").find("input[type=text]").val("");
-        window.setTimeout( $modal.modal('hide');, 500);
+        window.setTimeout( $modal.modal('hide'), 100);
 
       },
       error: function(user, error) {
