@@ -1753,6 +1753,11 @@ header img {
     position: relative;
 }
 
+#intro .button > a {
+    color: white;
+    text-decoration: none;
+}
+
 #intro .button > span:active, #intro .button > a:active {
   position: relative;
   border: 0;
