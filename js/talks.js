@@ -5,7 +5,7 @@ $(function() {
 
 
   // handler for form submission
-  $('.preregister-modal input[value="submit"]').on("click", function(event) {
+  $('.preregister-modal input[name="submit"]').on("click", function(event) {
     var $form = $('.preregister-modal form');
     
     var $target = $($form.attr('data-target'));
