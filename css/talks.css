@@ -1657,12 +1657,13 @@ header img {
 }
 #intro .info .learnmore {
     font-weight: 900;
+    color: #0dabe2; 
+
+}
+#intro .info .learnmore.grey {
     color: #bac4c6
 }
-#intro .info .learnmore {
-    color: #0dabe2;
-    text-decoration: none
-}
+
 #intro .info .learnmore a:hover {
     text-decoration: underline
 }
