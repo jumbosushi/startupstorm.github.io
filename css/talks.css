@@ -1753,12 +1753,12 @@ header img {
     position: relative;
 }
 
-#intro .button span:active {
+#intro .button > span:active, #intro .button > a:active {
   position: relative;
   border: 0;
   top: 4px;
   margin-bottom: 4px; }
-#intro .button span:after {
+#intro .button > span:after, #intro .button > a:after {
   content: '';
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1772,9 +1772,9 @@ header img {
   margin-top: 3px;
   width: 10px;
   height: 9px; }
-#intro .button span:after {
+#intro .button > span:after, #intro .button > a:after {
   content: none; }
-#intro .button a span:before {
+#intro .button > span:before, #intro .button > a:after {
   display: inline-block;
   line-height: .1em;
   position: relative;
