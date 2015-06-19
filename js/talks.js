@@ -1,7 +1,7 @@
 // On page load...
 $(function() {
 
-  Parse.initialize("VQV5exDOHIgQBqAnOM9KtnlyG3IIJ6qIeFwHvPxA", "V9BggunFvfLpRPUMJJvQ1tK1EnPlffoubmnD6LIl");
+  Parse.initialize("RVMW4aNuITR1kbPJQaBMio4PkfQKBOcTUHwgNqJu", "3w1mAB39uu4nKU6Kssf1dk0jaYIc9EbzI8ydKdd8");
 
 
   // handler for form submission
